@@ -112,5 +112,5 @@ body {
   #page4 {background-color: white ;}
   #page5 {background-color: #fdeae6 ;} 
   #page7 img {filter: brightness(30%);}
-  #page7_text {position: absolute; z-index: 1; color: white;}
+  #page7_text {animation: text .4s .2s both; position: absolute; z-index: 1; color: white;}
 }
