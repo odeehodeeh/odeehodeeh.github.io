@@ -22,9 +22,11 @@ body {
 
 @media  (orientation: landscape) {
   
+  .swiper-pagination-bullet {width: 2vh; height: 2vh;  margin: 15vh; background: transparent; border: 0.3vh solid yellow;}
+
   .swiper-pagination-bullet-active {
-    background: yellow !important;
-  }
+    background: yellow; width: 6vh; transition: width .5s; border-radius: 1.5vh; border: 0.3vh solid transparent; height: 2vh; margin: 15vh;}
+
   
   .swiper {
     width: 100%;
@@ -68,9 +70,10 @@ body {
 
 @media (orientation: portrait)  {
   
+  .swiper-pagination-bullet {width: 2vh; height: 2vh;  margin: 15vh; background: transparent; border: 0.3vh solid yellow;}
+
   .swiper-pagination-bullet-active {
-    background: yellow !important;
-  }
+    background: yellow; width: 6vh; transition: width .5s; border-radius: 1.5vh; border: 0.3vh solid transparent; height: 2vh; margin: 15vh;}
   
   .swiper {
     width: 100%;
@@ -99,7 +102,7 @@ body {
   
   .swiper-slide img {
     display: block;
-    width: 10%;
+    width: 100%;
   }›
   
   /*모바일 페이지별 세부조정*/
