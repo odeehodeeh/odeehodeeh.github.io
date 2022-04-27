@@ -38,8 +38,6 @@
       rel="stylesheet"
       href="style.css"
     />
-
-
     
   </head>
 
@@ -54,6 +52,9 @@
         <div class="swiper-slide" id="page5"><img src="5.jpg"></div>        
         <div class="swiper-slide" id="page6"><img src="6.jpg"></div>
         <div class="swiper-slide" id="page7"><img src="7.jpg"></div>
+        <div class="swiper-slide" id="page8">
+          <iframe width=100% height=100% src="https://www.youtube.com/embed/js71UM4KVQs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
       </div>
       <div class="swiper-pagination"></div>
@@ -64,11 +65,34 @@
 
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      if (window.matchMedia('(orientation: portrait)').matches) {
+	// Portrait 모드일 때 실행할 스크립트
+	// 폭과 높이가 같으면 Portrait 모드로 인식돼요
+  var swiper = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
         }
       });
+
+} else {
+	// Landscape 모드일 때 실행할 스크립트
+  var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+}
+      
+
     </script>
   </body>
 </html>
