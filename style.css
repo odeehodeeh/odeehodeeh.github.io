@@ -57,7 +57,7 @@ body {
 
   /*폰트 세팅*/
   .swiper-slide span {
-    position: absolute; z-index: 1; color: white;
+    position: absolute; z-index: 2; color: white;
   }
 
   /*모바일 페이지별 세부조정*/
@@ -66,7 +66,6 @@ body {
   #page3 {background-color: #f2e229 ;}
   #page4 {background-color: white ;}
   #page5 {background-color: #fdeae6 ;} 
-  #page7 div  {background-color: black;}
-  }
+  .swiper-slide-black{width: 1080px; height: 1920px; background-color: #000; position: absolute; z-index:1;}
 
 
