@@ -1,24 +1,6 @@
+/*모바일*/
 
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 20px; 
-  letter-spacing: -1.2px;
-  line-height: 34px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-/*PC*/
-
-@media  (pointer: fine) {
+@media (pointer: coarse)  {
   
   .swiper-pagination-bullet-active {
     background: yellow !important;
@@ -49,10 +31,9 @@ body {
     align-items: center;
   }
   
-  /*pc최적화*/
   .swiper-slide img {
     display: block;
-    height: 100%;
+    width: 100%;
   }›
 
   /*폰트 세팅*/
@@ -60,10 +41,6 @@ body {
     position: absolute; z-index: 1; color: white;
   }›
   
-  /*애니메이션*/
-  .swiper-slide .swiper-slide-active span {animation: text .4s .2s both;}
-
-
   /*모바일 페이지별 세부조정*/
   #page1 {background-color: white ;}
   #page2 {background-color: #8ab2f0 ;}
@@ -72,4 +49,3 @@ body {
   #page5 {background-color: #fdeae6 ;} 
   #page7 img {filter: brightness(30%);}
 }
-
