@@ -20,7 +20,7 @@ body {
 
 /*PC*/
 
-@media  (pointer: fine) {
+@media  (orientation: landscape) {
   
   .swiper-pagination-bullet-active {
     background: yellow !important;
@@ -62,15 +62,11 @@ body {
   #page3 {background-color: #f2e229 ;}
   #page4 {background-color: white ;}
   #page5 {background-color: #fdeae6 ;} 
-  #page7 img {filter: brightness(30%);}
-  #page7_text {position: absolute; z-index: 1; color: white;}
 }
-
-
 
 /*모바일*/
 
-@media (pointer: coarse)  {
+@media (orientation: portrait)  {
   
   .swiper-pagination-bullet-active {
     background: yellow !important;
@@ -103,7 +99,7 @@ body {
   
   .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 10%;
   }›
   
   /*모바일 페이지별 세부조정*/
@@ -112,6 +108,4 @@ body {
   #page3 {background-color: #f2e229 ;}
   #page4 {background-color: white ;}
   #page5 {background-color: #fdeae6 ;} 
-  #page7 img {filter: brightness(30%);}
-  #page7_text {position: absolute; z-index: 1; color: white;}
 }
