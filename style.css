@@ -60,14 +60,13 @@ body {
     position: absolute; z-index: 1; color: white;
   }
 
-
   /*모바일 페이지별 세부조정*/
   #page1 {background-color: white ;}
   #page2 {background-color: #8ab2f0 ;}
   #page3 {background-color: #f2e229 ;}
   #page4 {background-color: white ;}
   #page5 {background-color: #fdeae6 ;} 
-  #page7 img {filter: brightness(100%);
+  #page7 img {
     transition-property: filter;
     transition-duration: 1s;}
 
