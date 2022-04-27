@@ -67,11 +67,12 @@ body {
   #page3 {background-color: #f2e229 ;}
   #page4 {background-color: white ;}
   #page5 {background-color: #fdeae6 ;} 
-  #page7 img {filter: brightness(30%);
+  #page7 img {filter: brightness(100%);
     transition-property: filter;
     transition-duration: 1s;}
-  div:hover {
-    filter: brightness(100%)
+
+  #page7 img:hover {
+    filter: brightness(30%)
   }
   
   }
