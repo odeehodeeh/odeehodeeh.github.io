@@ -16,7 +16,6 @@ body {
   padding: 0;
 }
 
-
 /*모바일*/
 
 @media (pointer: coarse)  {
@@ -54,6 +53,11 @@ body {
     display: block;
     width: 100%;
   }›
+
+  /*폰트 세팅*/
+  .swiper-slide span {
+    position: absolute; z-index: 1; color: white;
+  }›
   
   /*모바일 페이지별 세부조정*/
   #page1 {background-color: white ;}
@@ -62,9 +66,7 @@ body {
   #page4 {background-color: white ;}
   #page5 {background-color: #fdeae6 ;} 
   #page7 img {filter: brightness(30%);}
-  #page7_text {animation: text .4s .2s both; position: absolute; z-index: 1; color: white;}
 }
-
 
 
 /*PC*/
@@ -103,14 +105,19 @@ body {
   .swiper-slide img {
     display: block;
     height: 100%;
-  }
+  }›
 
-  /*pc 페이지별 세부조정*/
+  /*폰트 세팅*/
+  .swiper-slide span {
+    position: absolute; z-index: 1; color: white;
+  }›
+  
+  /*모바일 페이지별 세부조정*/
   #page1 {background-color: white ;}
   #page2 {background-color: #8ab2f0 ;}
   #page3 {background-color: #f2e229 ;}
   #page4 {background-color: white ;}
   #page5 {background-color: #fdeae6 ;} 
   #page7 img {filter: brightness(30%);}
-  #page7_text {animation: text .4s .2s both; position: absolute; z-index: 1; color: white;}
 }
+
