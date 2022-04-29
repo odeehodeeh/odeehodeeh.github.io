@@ -59,11 +59,11 @@ body {
   }
 
   /*pc 페이지별 세부조정*/
-  #page1 {background-color: white ;}
-  #page2 {background-color: #8ab2f0 ;}
-  #page3 {background-color: #f2e229 ;}
-  #page4 {background-color: white ;}
-  #page7 {background-color: #fdeae6 ;} 
+  #page1 {}
+  #page2 {}
+  #page3 {}
+  #page4 {}
+  #page7 { }
 
 
 
@@ -111,11 +111,11 @@ body {
   }›
   
   /*모바일 페이지별 세부조정*/
-  #page1 {background-color: white ;}
-  #page2 {background-color: #8ab2f0 ;}
-  #page3 {background-color: #f2e229 ;}
-  #page4 {background-color: white ;}
-  #page7 {background-color: #fdeae6 ;} 
+  #page1 {}
+  #page2 {}
+  #page3 {}
+  #page4 {}
+  #page7 { }
 
 
 }
