@@ -119,3 +119,53 @@ body {
 
 
 }
+
+
+/*아이폰*/
+
+@media (orientation: portrait)  {
+  
+  .swiper-pagination-bullet {width: 2vh; height: 2vh;  margin: 15vh; background: transparent; border: 0.3vh solid yellow;}
+
+  .swiper-pagination-bullet-active {
+    background: yellow; width: 6vh; transition: width .5s; border-radius: 1.5vh; border: 0.3vh solid transparent; height: 2vh; margin: 15vh;}
+  
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }›
+  
+  /*모바일 페이지별 세부조정*/
+  #page1 {}
+  #page2 {}
+  #page3 {}
+  #page4 {}
+  #page7 { }
+
+
+}
