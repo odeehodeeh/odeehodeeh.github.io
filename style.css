@@ -72,11 +72,12 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
+  line-height: 100vh;
   z-index: 3;
   opacity: 1;
   transition: opacity 0.5s;
-  color: yellow;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 }
 
@@ -136,14 +137,12 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
+  line-height: 100vh;
   z-index: 3;
   opacity: 1;
   transition: opacity 0.5s;
-  color: yellow;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-top: 1vh;
-  padding: 1vh;
-  border-radius: 2vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 }
