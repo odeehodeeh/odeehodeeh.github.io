@@ -44,46 +44,48 @@
 
   <body>
   <!--알림창-->
-    <div class="notification-container" id="notification-container">
-      <p>오른쪽으로 넘겨보세요!</p>
-    </div>
-    
-    <script>
-      const notification = document.getElementById('notification-container')
+  <script>
+    const notification = document.getElementById('notification-container')
 // Show notification
 const showNotification = () => {
-  notification.classList.add('show')
-  setTimeout(() => {
-    notification.classList.remove('show')
-  }, 2000)
+notification.classList.add('show')
+setTimeout(() => {
+  notification.classList.remove('show')
+}, 2000)
 }
 
 //keydown letter press
 window.addEventListener('keydown', (e) => {
-  // only want alphabet keys to get into the eventlistener
-  if (e.keyCode >= 65 && e.keyCode <= 90) {
-    const letter = e.key
-    //we want only letters that are not already pressed
-    if (selectedWord.includes(letter)) {
-      if (!correctLetters.includes(letter)) {
-        correctLetters.push(letter)
-        displayWord()
-      } else {
-        //if same correct key pressed
-        showNotification()
-      }
+// only want alphabet keys to get into the eventlistener
+if (e.keyCode >= 65 && e.keyCode <= 90) {
+  const letter = e.key
+  //we want only letters that are not already pressed
+  if (selectedWord.includes(letter)) {
+    if (!correctLetters.includes(letter)) {
+      correctLetters.push(letter)
+      displayWord()
     } else {
-      if (!wrongLetters.includes(letter)) {
-        wrongLetters.push(letter)
-        updateWrongLettersEl()
-      } else {
-        //if same wrong key pressed
-        showNotification()
-      }
+      //if same correct key pressed
+      showNotification()
+    }
+  } else {
+    if (!wrongLetters.includes(letter)) {
+      wrongLetters.push(letter)
+      updateWrongLettersEl()
+    } else {
+      //if same wrong key pressed
+      showNotification()
     }
   }
+}
 })
-    </script>
+  </script>
+
+    <div class="notification-container" id="notification-container">
+      <p>오른쪽으로 넘겨보세요!</p>
+    </div>
+    
+   
   
   
     <!-- Swiper -->
