@@ -134,16 +134,18 @@ body {
 
 /*알림창*/
 .notification-container {
-  display: fixed;
-  bottom: 10px;
+  display: block;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%,0);
   z-index: 3;
-  opacity: 0.1;
-}
-
-.notification-container.none {
-  display: none;
-  z-index: 3;
-  opacity: 0.1;
+  opacity: 1;
+  transition: opacity 0.5s;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 1vh;
+  padding: 1vh;
+  border-radius: 2vh;
 }
 
 }
