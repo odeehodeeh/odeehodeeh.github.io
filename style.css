@@ -127,10 +127,13 @@ body {
   position: absolute;
   bottom: -50px;
   transition: transform 0.3s ease-in-out;
+  z-index: 3 ;
 }
 
 .notification-container.show {
   transform: translateY(-50px);
+  z-index: 3 ;
+
 }
 
 
