@@ -46,11 +46,18 @@
 
   <body>
   <!--알림창-->
-  <script src = "alert.js">  </script>
-    <div onclick="notificationalert()" class="notification-container" id="notification-container">
-  오른쪽으로 넘겨주세요 ➡
-    </div>
-    
+  <div onclick="notificationalert()" class="notification-container" id="notification-container">
+    오른쪽으로 넘겨주세요 ➡
+      </div>
+  
+      <script>
+        function notificationalert() {
+      document.getElementById("notification-container").style.opacity ='0';
+      document.getElementById("notification-container").style.display ='none';
+
+  }
+      </script>
+      
    
   
   
